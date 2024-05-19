@@ -14,9 +14,9 @@ const SettingsPanel = ({ selectedNode, updateSelectedNode }) => {
         <div className="settings-panel">
             <h3>Settings</h3>
             <label>
-                Node Text:
+                Text:
                 <textarea
-                    value={selectedNode.data.label}
+                    value={selectedNode?.data?.label || ''}
                     onChange={handleTextChange}
                 />
             </label>
